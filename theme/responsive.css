@@ -1,0 +1,16 @@
+#site-description {
+	background-image: url("./images/header_name_compact.png");
+	width: 230px;
+	height: 42px;
+	padding-left: 0px;
+}
+
+.headerbar {
+	background-image: none;
+	height: 42px;
+}
+
+.imageset.site_logo {
+	background-image: none;
+}
+
