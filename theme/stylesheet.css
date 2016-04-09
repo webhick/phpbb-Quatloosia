@@ -148,11 +148,19 @@ hr {
 .bg1 {
 	background-color: #E9E894;
 }
-
+/*
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: #ECF3F7;
+}
+*/
 .bg2 {
 	background-color: #D9D889;
 }
-
+/*
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: #e1ebf2;
+}
+*/
 .bg3	{ background-color: #D3D286; } 
 
 .big-column { 
@@ -279,10 +287,46 @@ dl.details dd {
 .action-bar {
 	font-size: 14px;
 }
+/*.copyright {
+	color: #555555;
+}
 
+.error {
+	color: #BC2A4D;
+}
+
+.reported {
+	background-color: #F7ECEF;
+}
+
+li.reported:hover {
+	background-color: #ECD5D8 !important;
+}*/
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
 }
+
+/*div.rules {
+	background-color: #ECD5D8;
+	color: #BC2A4D;
+}
+
+p.post-notice {
+	background-color: #ECD5D8;
+	background-image: none;
+}
+
+p.post-notice.deleted:before {
+	background-image: url("./images/icon_topic_deleted.png");
+}
+
+p.post-notice.unapproved:before {
+	background-image: url("./images/icon_topic_unapproved.gif");
+}
+
+p.post-notice.reported:before, p.post-notice.error:before {
+	background-image: url("./images/icon_topic_reported.gif");
+}*/
 
 .imageset.icon_topic_newest {
     background-image: url("./images/icon_topic_newest.png");
@@ -375,6 +419,23 @@ a.top2 {
 }
 
 a.lastsubject { color: #000000; }
+/* Arrow links  */
+/*a.arrow-up			{ background-image: url("./images/arrow_up.gif"); }
+a.arrow-down		{ background-image: url("./images/arrow_down.gif"); }
+a.arrow-left		{ background-image: url("./images/arrow_left.gif"); }
+a.arrow-right		{ background-image: url("./images/arrow_right.gif"); }
+
+a.arrow-up:hover {
+	background-color: transparent;
+}
+
+a.arrow-left:hover {
+	color: #368AD2;
+}
+
+a.arrow-right:hover {
+	color: #368AD2;
+}*/
 
 /*
 --------------------------------------------------------------
@@ -403,6 +464,27 @@ li.row {
 	border-top-color:  #fffea1;
 	border-bottom-color: #858454;
 }
+/*
+li.row strong {
+	color: #000000;
+}
+
+li.row:hover {
+	background-color: #F6F4D0;
+}
+
+li.row:hover dd {
+	border-left-color: #CCCCCC;
+}
+
+.rtl li.row:hover dd {
+	border-right-color: #CCCCCC;
+	border-left-color: transparent;
+}
+
+li.header dt, li.header dd {
+	color: #FFFFFF;
+}*/
 
 /* Post body styles
 ----------------------------------------*/
@@ -425,6 +507,11 @@ dl.faq dt {
 	color: #000000;
 }
 
+/*.posthilit {
+	background-color: #F3BFCC;
+	color: #BC2A4D;
+}*/
+
 .announce, .unreadpost {
 	/* Highlight the announcements & unread posts box */
 }
@@ -433,6 +520,11 @@ dl.faq dt {
 .signature {
 	border-top-color: #000000;
 }
+
+/* Post notices */
+/* .notice {
+	border-top-color:  #CCCCCC;
+} */
 
 /* BB Code styles
 ----------------------------------------*/
@@ -629,6 +721,7 @@ dd.profile-warnings {
 Colours and backgrounds for buttons.css
 -------------------------------------------------------------- */
 
+
 .button {
 	border-color: #858454;
 	background-color: #e4e474;
@@ -674,6 +767,12 @@ Colours and backgrounds for buttons.css
 }
 .post-buttons .icon-button::before { padding-top: 3px; }
 	
+/*
+.contact-icons a		{ border-color: #DCDCDC; }
+.contact-icons a:hover	{ background-color: #F2F6F9; }
+
+*/
+
 /* Icon images
 ---------------------------------------- */
 
@@ -873,6 +972,14 @@ Colours and backgrounds for cp.css
 
 /* Preferences pane layout
 ----------------------------------------*/
+/*.panel-container h2 {
+	color: #333333;
+}
+
+.panel-container .panel {
+	background-color: #F9F9F9;
+}
+*/
 #cp-main .pm {
 	background-color: #fefda1;
 }
@@ -889,6 +996,41 @@ dl.mini dt {
 /* PM Styles
 ----------------------------------------*/
 /* PM Message history */
+/*.current {
+	color: #000000 !important;
+}*/
+
+/* PM marking colours */
+/*.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
+	border-left-color: #BC2A4D;
+	border-right-color: #BC2A4D;
+}
+
+.pmlist li.pm_marked_colour, .pm_marked_colour {
+	border-color: #FF6600;
+}
+
+.pmlist li.pm_replied_colour, .pm_replied_colour {
+	border-color: #A9B8C2;
+}
+
+.pmlist li.pm_friend_colour, .pm_friend_colour {
+	border-color: #5D8FBD;
+}
+
+.pmlist li.pm_foe_colour, .pm_foe_colour {
+	border-color: #000000;
+}*/
+
+/* Avatar gallery */
+/*#gallery label {
+	background: #FFFFFF;
+	border-color: #CCC;
+}
+
+#gallery label:hover {
+	background-color: #EEE;
+}*/
 
 /*
 --------------------------------------------------------------
@@ -916,6 +1058,24 @@ option.disabled-option {
 dd label {
 	color: #000000;
 }
+/*
+fieldset.fields1 {
+	background-color: transparent;
+}*/
+
+/* Hover effects */
+/*fieldset dl:hover dt label {
+	color: #000000;
+}
+
+fieldset.fields2 dl:hover dt label {
+	color: inherit;
+}*/
+
+/* Quick-login on index page */
+/*fieldset.quick-login input.inputbox {
+	background-color: #F2F3F3;
+}*/
 
 /* Posting page styles
 ----------------------------------------*/
@@ -1096,5 +1256,13 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 
 /* Notifications
 ---------------------------------------- */
+
+/*.notification_list p.notification-time {
+	color: #4C5D77;
+}
+
+li.notification-reported strong, li.notification-disapproved strong {
+	color: #D31141;
+}*/
 
 .no_notifications { color: #ffffff; }
